@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mon Titre Principal</h1>
+    <p>
+        Voici le contenu de ma page. Tu peux remplacer ce texte par ce que tu veux.
+        C'est une page HTML minimaliste avec juste le nécessaire pour afficher 
+        un titre et du texte de manière lisible.
+    </p>
+    <p>
+        Tu peux ajouter autant de paragraphes que tu veux. Le style est 
+        volontairement simple et efficace.
+    </p>
+</body>
+</html>
