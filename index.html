@@ -169,15 +169,15 @@
             </div>
         </fieldset>
 
-        <button type="submit" class="submit-btn">Voir mon résultat</button>
+        <button type="submit" class="submit-btn">Show my result</button>
     </form>
 
     <!-- Modal pour afficher le résultat -->
     <div id="resultModal" class="modal">
         <div class="modal-content">
-            <h2>Résultat du Quiz</h2>
+            <h2>Quiz result</h2>
             <p id="resultText"></p>
-            <button class="close-btn" onclick="closeModal()">Fermer</button>
+            <button class="close-btn" onclick="closeModal()">Back</button>
         </div>
     </div>
 
@@ -218,7 +218,7 @@
             const q3 = document.querySelector('input[name="question3"]:checked');
             
             if (!q1 || !q2 || !q3) {
-                alert('Veuillez répondre à toutes les questions avant de continuer.');
+                alert('Please answer to all question to continue.');
                 return;
             }
             
@@ -234,9 +234,9 @@
             const modal = document.getElementById('resultModal');
             
             if (yesCount >= 2) {
-                resultText.innerHTML = '<span class="result-addict">Vous semblez être addict aux réseaux sociaux.</span><br><br>Il pourrait être bénéfique de consulter les ressources d\'aide disponibles ci-dessous.';
+                resultText.innerHTML = '<span class="result-addict">You seem addicted to SM.</span><br><br>The ressources bellow may help you.';
             } else {
-                resultText.innerHTML = '<span class="result-not-addict">Vous ne semblez pas être addict aux réseaux sociaux.</span><br><br>Continuez à maintenir un usage équilibré des réseaux sociaux !';
+                resultText.innerHTML = '<span class="result-not-addict">You don't seem addicted to SM.</span><br><br>Continue to maintain a balanced use of social media!';
             }
             
             modal.style.display = 'block';
@@ -256,3 +256,4 @@
     </script>
 </body>
 </html>
+
